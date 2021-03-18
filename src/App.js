@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// Ctrl+A - выделить весь код
+// Ctrl+K +F - выровнять код
+// Ctrl+K+C/Ctrl+K+U - Comment Code (весь блок)
+import './App.css'; /* ./  - подключение файла из той же папки, где находится и этот файл (папка общая)*/ 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  {/* вместо ключевого слова var в js теперь ипользуется let и const https://www.w3schools.com/js/js_variables.asp */ }
+  return (  /* объясленной переменной App присвоена стрелочная функция */
+    <div> First div
+      <div className="App">  {/* css-класс обозначается словом className, так как слово class зарезервировано JS */}
+        <ul>                 {/* Функция не может возвражать несколько элементов подряд, тэги нужно встроить внутрь основного элемента*/}
+          <li>css</li>
+          <li>html</li>
+          <li>js</li>
+          <li>react</li>
+        </ul>
+      </div>
+      <NewComponent />  {/* Вставка одной компоненты в другую под видом тэга */} 
     </div>
   );
+}
+
+
+const NewComponent = () => {
+  return <div>
+    <h4>New Component</h4>
+  </div>
 }
 
 export default App;
