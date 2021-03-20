@@ -1,3 +1,48 @@
-ul li {
-  list-style-type:upper-roman;
+/* Модуль CSS Grid Layout предлагает систему макета на основе сетки со строками и столбцами, 
+что упрощает разработку веб-страниц без использования плавающих элементов и позиционирования.
+https://www.w3schools.com/css/css_grid.asp */
+
+.app-wrapper {
+  display:grid;
+  grid-template-areas: 
+  'h h'  /* Схема, указывающая на то, что всё поделено на 2 строки, а нижняя строка разделена на 2 колонки */
+  'n p';
+
+  grid-template-rows: 70px 800px;  /* свойство, описывающее высоту колонок, идущих друг за другом */
+  grid-template-columns: 1fr 7fr; /* свойство, описывающее ширину колонок в px либо дробных частях */
+  grid-gap: 10px; /* свойство, описывающее пространство между гридами */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.header {
+  grid-area: h; /* псевдоним класса для использования в grid-template-areas */
+  background-color:#08b46c;
+}
+
+.header img {
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.nav {
+  grid-area: n;
+  background-color:#06b568;
+  padding: 10px;
+  font-size:large;
+  color:ghostwhite;
+}
+
+.profile {
+  grid-area: p;
+  background-color:gainsboro;
+}
+
+.profile img {  /* В реакте не подходит использование img.content */
+  width:100%;
+}
+
+.Avatar_description img {  /* В реакте не подходит использование img.content */
+  width:100px;
 }
