@@ -1,9 +1,17 @@
+import profileCSS from './Profile.module.css';
 
 const Profile = () => {
     return <div className='profile'>
-    <div id='Image'><img src='https://overreacted.io/static/0429fcb4a2f2022852afc698ff8968f1/0b533/react.png'></img></div>
-   <div className='Avatar_description'><img src='https://railsware.com/blog/wp-content/uploads/2019/07/Why-we-use-ReactJS-for-our-projects-Icon.png'></img></div>
-   <div className='My posts'><div id='New post'></div></div>
+    <div><img className={profileCSS.banner} src='https://sigmetic.io/static/020b7216f1d03de4882b52a9669cbc59/acf8f/react-banner.png'></img></div>
+   <div><img className={profileCSS.avatar}src='https://railsware.com/blog/wp-content/uploads/2019/07/Why-we-use-ReactJS-for-our-projects-Icon.png'></img></div>
+   <div className='posts'>My posts
+     <div>New post</div>
+     <div>
+       <div>post1</div>
+       <div>post2</div>
+       <div>post3</div>
+     </div>
+     </div>
   </div>
 }
 

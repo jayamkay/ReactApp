@@ -1,0 +1,21 @@
+.header {
+    grid-area: h; /* псевдоним класса для использования в grid-template-areas */
+    background-color:#08b46c;
+  }
+  
+
+  /* 1й вариант - привенены стили ко всем изображениям в классе header*/
+  /* .header img {
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+  } */
+
+
+   /* 2й вариант - создан отдельный класс в модуле, изменяющий конкретное, относящееся
+    к данному классу изображение*/
+   .img {
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }

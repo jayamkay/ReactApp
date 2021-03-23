@@ -14,35 +14,3 @@ https://www.w3schools.com/css/css_grid.asp */
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.header {
-  grid-area: h; /* псевдоним класса для использования в grid-template-areas */
-  background-color:#08b46c;
-}
-
-.header img {
-  height: 60px;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.nav {
-  grid-area: n;
-  background-color:#06b568;
-  padding: 10px;
-  font-size:large;
-  color:ghostwhite;
-}
-
-.profile {
-  grid-area: p;
-  background-color:gainsboro;
-}
-
-.profile img {  /* В реакте не подходит использование img.content */
-  width:100%;
-}
-
-.Avatar_description img {  /* В реакте не подходит использование img.content */
-  width:100px;
-}

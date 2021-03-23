@@ -1,0 +1,12 @@
+.profile {
+    grid-area: p;
+    background-color:gainsboro;
+  }
+  
+  .banner {  /* В реакте не подходит использование img.profile */
+    width:100%;
+  }
+  
+  .avatar {  
+    width:100px;
+  }

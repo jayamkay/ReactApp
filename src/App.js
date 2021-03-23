@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Profile from './components/Profile';
+import Header from './Components/Header';
+import Navbar from './Components/Navbar';
+import Profile from './Components/Profile';
 
 const App = () => {
   return <div className='app-wrapper'> 
@@ -10,7 +10,5 @@ const App = () => {
     <Profile />
   </div>
 }
-
-
 
 export default App;

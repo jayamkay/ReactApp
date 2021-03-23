@@ -1,0 +1,21 @@
+/* 1й вариант - применен цвет текста ко всему модулю */
+/* .nav {
+  grid-area: n;
+  background-color:#06b568;
+  padding: 10px;
+  font-size:large;
+  color:ghostwhite;
+} */
+
+
+/* 2й вариант - применен цвет текста к отдельным тэгам */
+.nav {
+  grid-area: n;
+  background-color:#06b568;
+  padding: 10px;
+  font-size:large;
+}
+
+.item {
+  color:ghostwhite;
+}
