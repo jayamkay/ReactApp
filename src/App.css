@@ -2,6 +2,7 @@
 что упрощает разработку веб-страниц без использования плавающих элементов и позиционирования.
 https://www.w3schools.com/css/css_grid.asp */
 
+
 .app-wrapper {
   display:grid;
   grid-template-areas: 
@@ -9,7 +10,7 @@ https://www.w3schools.com/css/css_grid.asp */
   'n p';
 
   grid-template-rows: 70px 800px;  /* свойство, описывающее высоту колонок, идущих друг за другом */
-  grid-template-columns: 1fr 7fr; /* свойство, описывающее ширину колонок в px либо дробных частях */
+  grid-template-columns: 1fr 8fr; /* свойство, описывающее ширину колонок в px либо дробных частях */
   grid-gap: 10px; /* свойство, описывающее пространство между гридами */
   margin-left: 10%;
   margin-right: 10%;

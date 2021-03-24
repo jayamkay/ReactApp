@@ -1,0 +1,17 @@
+.info {  
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info img {  
+    width:130px;
+    height: 130px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.info p {  
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

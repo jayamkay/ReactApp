@@ -1,0 +1,11 @@
+.addpost {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.addpost button {
+    margin-top: 1%;
+    position: relative;
+    left: 92%;
+}
