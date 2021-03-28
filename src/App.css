@@ -7,11 +7,16 @@ https://www.w3schools.com/css/css_grid.asp */
   display:grid;
   grid-template-areas: 
   'h h'  /* Схема, указывающая на то, что всё поделено на 2 строки, а нижняя строка разделена на 2 колонки */
-  'n p';
+  'n c';
 
   grid-template-rows: 70px 800px;  /* свойство, описывающее высоту колонок, идущих друг за другом */
   grid-template-columns: 1fr 8fr; /* свойство, описывающее ширину колонок в px либо дробных частях */
   grid-gap: 10px; /* свойство, описывающее пространство между гридами */
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.app-wrapper-content {
+  grid-area: c;
+  background-color:gainsboro;
 }
