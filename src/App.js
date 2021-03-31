@@ -12,13 +12,13 @@ import Settings from './Components/Settings/Settings';
 const App = () => {
   return <div className='app-wrapper'>
     <Header />
-    <Navbar />
     <BrowserRouter>
+    <Navbar />
       <div className='app-wrapper-content'>
-        <Route path='/profile' component={Profile} />
-        <Route path='/dialogs' component={Dialogs_js_object} />
-        <Route path='/music' component={Music} />
-        <Route path='/news' component={News} />
+        <Route exact path='/profile' component={Profile} />
+        <Route exact path='/dialogs' component={Dialogs_js_object} />
+        <Route exact path='/music' component={Music} />
+        <Route exact path='/news' component={News} />
         <Route path='/settings' component={Settings} />
       </div>
     </BrowserRouter>

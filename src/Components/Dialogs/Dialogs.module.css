@@ -1,0 +1,31 @@
+.dialogs {
+    display: flex;
+}
+
+.active a:hover {
+    color: gold;
+}
+
+.dialogs_items {
+    flex-grow: 1;
+}
+
+.messages {
+    flex-grow: 2;
+}
+
+.dialog a:link, a:visited {
+    color: #212529;
+}
+  
+.dialog a:hover {
+    color:slategrey;
+    text-decoration: none;
+}
+
+.message {
+
+}
+
+
+
