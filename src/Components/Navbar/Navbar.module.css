@@ -6,7 +6,7 @@
   font-size:large;
 }
 
-.nav a:link, a:visited {
+.nav a:link, .nav a:visited {
   color:ghostwhite;
 }
 
