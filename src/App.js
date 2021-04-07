@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
-import Profile from './Components/Profile/Profile';
+import profile from './Components/Profile/Profile';
 import Dialogs_js_object from "./Components/Dialogs/Dialogs";
 import { BrowserRouter, Route } from 'react-router-dom';
 import Music from './Components/Music/Music';
@@ -15,7 +15,7 @@ const App = () => {
     <BrowserRouter>
     <Navbar />
       <div className='app-wrapper-content'>
-        <Route exact path='/profile' component={Profile} />
+        <Route exact path='/profile' component={profile} />
         <Route exact path='/dialogs' component={Dialogs_js_object} />
         <Route exact path='/music' component={Music} />
         <Route exact path='/news' component={News} />

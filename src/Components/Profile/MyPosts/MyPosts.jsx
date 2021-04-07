@@ -8,12 +8,16 @@ let postData = [
 ]
 
 
+let postList = postData.map( post => {
+  return <Post message={post.postMessage} />
+})
+
+
 const MyPosts = () => {
   return <div className='posts'>
     <AddPost />
     <div>
-      <Post message={postData[0].postMessage} />
-      <Post message={postData[1].postMessage} />
+      {postList}
     </div>
   </div>
 }
