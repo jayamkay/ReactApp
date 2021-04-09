@@ -48,6 +48,7 @@ let messagesConponents = data.messages.map( el =>{
 
 
 const Dialogs = (props) => {
+    console.log(Dialogs.props);
     return (
         <div className={dialogsCSS.dialogs}>
             <div className={dialogsCSS.dialogs_items}>
