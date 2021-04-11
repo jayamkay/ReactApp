@@ -4,10 +4,48 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let postData_ = [
+  { id: 1, postMessage: 'This is the First post' },
+  { id: 2, postMessage: 'It\'s the Second post' }
+];
+
+let messageData_ = 
+{ 
+    users : 
+    [
+        {
+            id : 1,
+            name : 'Name 1'
+        },
+        {
+            id : 2,
+            name : 'Name 2'
+        },
+        {
+            id : 3,
+            name : 'Name 3'
+        }
+    ],
+    messages :
+    [
+        {
+            id : 1,
+            message : 'Message 1'
+        },
+        {
+            id : 2,
+            message : 'Message 2'
+        },
+        {
+            id : 3,
+            message : 'Message 3'
+        }
+    ]
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App postData={postData_} messageData={messageData_}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

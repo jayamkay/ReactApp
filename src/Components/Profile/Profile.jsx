@@ -3,11 +3,12 @@ import Info from './Info/Info';
 import MyPosts from './MyPosts/MyPosts';
 
 
-const Profile = () => {
+const Profile = (props) => {
+
     return <div>
-    <Banner/>
-    <Info/>
-    <MyPosts/>
+    <Banner />
+    <Info />
+    <MyPosts postData={props.postData} />
   </div>
 }
 
