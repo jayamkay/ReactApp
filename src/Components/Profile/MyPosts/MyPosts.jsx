@@ -5,7 +5,7 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
   
-  let postList = props.postData.map( post => {
+  let postList = props.postData.postData.map( post => {
     return <Post message={post.postMessage} />
   })
 
