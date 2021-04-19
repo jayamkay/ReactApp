@@ -11,7 +11,7 @@ const MyPosts = (props) => {
 
 
   return <div className='posts'>
-    <AddPost />
+    <AddPost props_addnewpost={props.props_addnewpost} />
     <div>
       {postList}
     </div>
