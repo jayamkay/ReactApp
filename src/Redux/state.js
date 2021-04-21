@@ -1,3 +1,4 @@
+import {rerenderEntireTree} from './../index'
 
 let state = 
   { 
@@ -50,9 +51,9 @@ let state =
 
 export const addNewPost = (PROPS_postmessage) =>
 {
-    debugger;
     let tempId = Object.keys(state.profilePage.postData).length++;
     state.profilePage.postData.push({id: tempId, postMessage: PROPS_postmessage});
+    rerenderEntireTree();
 }
 
   export default state;

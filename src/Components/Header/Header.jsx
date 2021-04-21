@@ -1,4 +1,5 @@
 import headerCSS from './Header.module.css';
+import header_img from './../../Images/Header_img.png';
 
 // let headerCSS = {                             Представление CSS-модуля объектом JS
 //     'header': 'Header_header__1GDG3'
@@ -18,7 +19,7 @@ const Header = () => {
     /* 2й вариант - создан отдельный класс в модуле, изменяющий конкретное, относящееся
     к данному классу изображение*/
     return <header className={headerCSS.header}>
-        <img className={headerCSS.img} src='https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png'></img>
+        <img className={headerCSS.img} src={header_img}></img>
     </header>
 }
 

@@ -16,6 +16,8 @@ const App = (props) => {
     <BrowserRouter>
     <Navbar />
       <div className='app-wrapper-content'>
+        <Route exact path='/' render={ () => <Profile postData={props.state.profilePage}
+        props_addnewpost={props.props_addnewpost}/>} />
         <Route exact path='/profile' render={ () => <Profile postData={props.state.profilePage}
         props_addnewpost={props.props_addnewpost}/>} />
         <Route exact path='/dialogs' render={ () => <Dialogs messageData={props.state.dialogsPage}/>} />

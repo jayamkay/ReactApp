@@ -1,10 +1,10 @@
-import infoCSS from './Info.module.css'
-
+import infoCSS from './Info.module.css';
+import avatar_img from './../../../Images/Avatar_img.png';
 
 const Info = () => {
     return (
         <div className={infoCSS.info}>
-            <img src='https://railsware.com/blog/wp-content/uploads/2019/07/Why-we-use-ReactJS-for-our-projects-Icon.png'></img>
+            <img src={avatar_img}></img>
             <div>
             <h3>Jayamkay</h3>
             <p>Date of Birth: 4 June</p>
@@ -12,7 +12,6 @@ const Info = () => {
             <p>Education: NU"ZP"'13</p>
             <p>Web Site: https://github.com/jayamkay</p>
             </div>
-
         </div>
     )
 }

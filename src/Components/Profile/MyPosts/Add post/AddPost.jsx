@@ -1,5 +1,4 @@
 import React from 'react';
-import state from '../../../../Redux/state';
 import addpostCSS from './AddPost.module.css';
 
 
@@ -7,12 +6,15 @@ function AddPost(props)
 {
     let newPostElement = React.createRef();
     function addnewpost()
-    { 
-        debugger;
+    {
         let text = newPostElement.current.value;
-        //alert(Object.keys(state.profilePage.postData).length);
-        props.props_addnewpost(text);
-        //alert(Object.keys(state.profilePage.postData).length);
+        if (text == '') {
+            alert('There is nothing written in your post');
+        }
+        else {
+            props.props_addnewpost(text);
+            newPostElement.current.value = '';
+        }   
     }
     return <div className={addpostCSS.addpost}>
     <h5>My posts</h5>

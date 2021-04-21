@@ -6,11 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import state from './Redux/state'
 import {addNewPost} from './Redux/state'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={state} props_addnewpost={addNewPost}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
+export let rerenderEntireTree = () =>
+{
+  ReactDOM.render(
+    <React.StrictMode>
+      <App state={state} props_addnewpost={addNewPost}/>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
+
+rerenderEntireTree();
 reportWebVitals();
