@@ -1,4 +1,4 @@
-import {rerenderEntireTree} from './../index'
+import {rerenderEntireTree} from './render.js'
 
 let state = 
   { 
@@ -53,7 +53,7 @@ export const addNewPost = (PROPS_postmessage) =>
 {
     let tempId = Object.keys(state.profilePage.postData).length++;
     state.profilePage.postData.push({id: tempId, postMessage: PROPS_postmessage});
-    rerenderEntireTree();
+    rerenderEntireTree(state, addNewPost);
 }
 
-  export default state;
+export default state;

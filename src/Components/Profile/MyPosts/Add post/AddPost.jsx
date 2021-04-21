@@ -14,7 +14,7 @@ function AddPost(props)
         else {
             props.props_addnewpost(text);
             newPostElement.current.value = '';
-        }   
+        }
     }
     return <div className={addpostCSS.addpost}>
     <h5>My posts</h5>
