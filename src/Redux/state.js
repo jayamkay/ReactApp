@@ -45,15 +45,24 @@ let state =
               id: 2,
               postMessage: 'It\'s the Second post'
           }
-        ]
+        ],
+        newPostText: ''
       }
   }
+
+export let changeNEW_POST_TEXT = (PROPS_newText) => {
+    state.profilePage.newPostText = PROPS_newText;
+    rerenderEntireTree(state, addNewPost, changeNEW_POST_TEXT);
+}
+
 
 export const addNewPost = (PROPS_postmessage) =>
 {
     let tempId = Object.keys(state.profilePage.postData).length++;
     state.profilePage.postData.push({id: tempId, postMessage: PROPS_postmessage});
-    rerenderEntireTree(state, addNewPost);
+    changeNEW_POST_TEXT('');
 }
+
+
 
 export default state;
