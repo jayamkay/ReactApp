@@ -50,16 +50,18 @@ let state =
       }
   }
 
+
+
 export let changeNEW_POST_TEXT = (PROPS_newText) => {
     state.profilePage.newPostText = PROPS_newText;
-    rerenderEntireTree(state, addNewPost, changeNEW_POST_TEXT);
+    rerenderEntireTree();
 }
 
 
-export const addNewPost = (PROPS_postmessage) =>
+export const addNewPost = () =>
 {
     let tempId = Object.keys(state.profilePage.postData).length++;
-    state.profilePage.postData.push({id: tempId, postMessage: PROPS_postmessage});
+    state.profilePage.postData.push({id: tempId, postMessage: state.profilePage.newPostText});
     changeNEW_POST_TEXT('');
 }
 

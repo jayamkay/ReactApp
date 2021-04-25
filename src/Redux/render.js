@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './../index.css';
 import App from './../App';
+import {addNewPost} from './state.js'
+import {changeNEW_POST_TEXT} from './state.js'
+import state from './state.js'
 
-
-export let rerenderEntireTree = (state, addNewPost, changeNEW_POST_TEXT) =>
+export let rerenderEntireTree = () =>
 {
   ReactDOM.render(
     <React.StrictMode>

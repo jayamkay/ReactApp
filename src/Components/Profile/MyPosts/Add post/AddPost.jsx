@@ -14,17 +14,15 @@ function AddPost(props)
 
     function addnewpost()
     {
-        let text = newPostElement.current.value;
-        if (text == '') {
+        if (newPostElement.current.value == '') {
             alert('There is nothing written in your post');
         }
         else {
-            props.props_addnewpost(text);
+            props.props_addnewpost();
         }
     }
 
     
-
     return <div className={addpostCSS.addpost}>
     <h5>My posts</h5>
     <textarea className="form-control" rows="4" id='textArea' ref={newPostElement}
