@@ -1,4 +1,3 @@
-import {rerenderEntireTree} from './render.js'
 
 let state = 
   { 
@@ -51,9 +50,8 @@ let state =
   }
 
 
-
-export let changeNEW_POST_TEXT = (PROPS_newText) => {
-    state.profilePage.newPostText = PROPS_newText;
+export const updatePostText = (newText) => {
+    state.profilePage.newPostText = newText;
     rerenderEntireTree();
 }
 
@@ -62,9 +60,15 @@ export const addNewPost = () =>
 {
     let tempId = Object.keys(state.profilePage.postData).length++;
     state.profilePage.postData.push({id: tempId, postMessage: state.profilePage.newPostText});
-    changeNEW_POST_TEXT('');
+    updatePostText('');
 }
 
 
+let rerenderEntireTree = () => {}
+
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;  //паттерн Observer
+}
 
 export default state;

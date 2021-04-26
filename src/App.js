@@ -11,15 +11,16 @@ import Settings from './Components/Settings/Settings';
 
 
 const App = (props) => {
+  //console.log(props);
   return <div className='app-wrapper'>
     <Header />
     <BrowserRouter>
     <Navbar />
       <div className='app-wrapper-content'>
         <Route exact path='/' render={ () => <Profile profilePage={props.state.profilePage}
-        props_addnewpost={props.props_addnewpost} props_changeNewPostText={props.props_changeNewPostText}/>} />
+        addNewPost={props.addNewPost} updatePostText={props.updatePostText}/>} />
         <Route exact path='/profile' render={ () => <Profile profilePage={props.state.profilePage}
-        props_addnewpost={props.props_addnewpost} props_changeNewPostText={props.props_changeNewPostText}/>} />
+        addNewPost={props.addNewPost} updatePostText={props.updatePostText}/>} />
         <Route exact path='/dialogs' render={ () => <Dialogs messageData={props.state.dialogsPage}/>} />
         <Route exact path='/music' render={ () => <Music />} />
         <Route exact path='/news' render={ () => <News />} />

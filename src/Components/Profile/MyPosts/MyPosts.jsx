@@ -11,8 +11,8 @@ const MyPosts = (props) => {
 
 
   return <div className={mypostsCSS.myposts}>
-    <AddPost newPostText={props.profilePage.newPostText} props_addnewpost={props.props_addnewpost}
-    props_changeNewPostText={props.props_changeNewPostText}/>
+    <AddPost newPostText={props.profilePage.newPostText} addNewPost={props.addNewPost}
+    updatePostText={props.updatePostText}/>
     <div>
       {postList}
     </div>

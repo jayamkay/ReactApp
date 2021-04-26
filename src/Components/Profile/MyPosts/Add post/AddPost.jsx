@@ -9,7 +9,7 @@ function AddPost(props)
 
     let onPostChange = () => {
         let text_new = newPostElement.current.value;
-        props.props_changeNewPostText(text_new);
+        props.updatePostText(text_new);
     }
 
     function addnewpost()
@@ -18,7 +18,7 @@ function AddPost(props)
             alert('There is nothing written in your post');
         }
         else {
-            props.props_addnewpost();
+            props.addNewPost();
         }
     }
 
